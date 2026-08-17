@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lucho — Editor de Videos & Desarrollador</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="script.js" defer></script>
+<link rel="stylesheet" href="styles.css">
+
+
+
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Lucho</a>
+  <ul class="nav-links">
+    <li><a href="#video">Videos</a></li>
+    <li><a href="#proyectos">Proyectos</a></li>
+    <li><a href="#habilidades">Skills</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <p class="hero-eyebrow">// Disponible para proyectos freelance</p>
+  <h1>
+    Cuento historias<br>
+    con imágenes<em>.</em><br>
+    Las automatizo<br>
+    con <em>código</em>.
+  </h1>
+  <p class="hero-sub">
+    Produzco contenido audiovisual con criterio narrativo y construyo herramientas que hacen que los procesos funcionen solos.
+  </p>
+  <div class="hero-ctas">
+    <a href="#video" class="btn-primary">Ver trabajos</a>
+    <a href="#contacto" class="btn-ghost">Contacto</a>
+  </div>
+</section>
+
+<!-- FILMSTRIP DIVIDER -->
+<div class="filmstrip">
+  <div class="filmstrip-inner" id="filmInner"></div>
+</div>
+
+<!-- VIDEO SECTION -->
+<section class="section" id="video">
+  <p class="section-label reveal">// 01 — Edición de video</p>
+  <h2 class="section-title reveal">Trabajos <em>audiovisuales</em></h2>
+  <p class="section-lead reveal" style="color: var(--black);">
+    Cada pieza tiene una razón de existir. Edito con Adobe Premiere Pro y trabajo con cada material con el criterio que merece.
+  </p>
+
+  <div class="video-grid reveal">
+    <!-- Card 1 — activa -->
+    <div class="video-card" onclick="openVideo(this)" data-url="https://drive.google.com/file/d/16HlbovRwseOqbhhypI8j2Awgjwj16ESr/view?usp=sharing">
+      <div class="video-thumb">
+        <div class="thumb-bg" style="background: linear-gradient(135deg, #1a1208 0%, #2a1e0a 100%);">
+          <p class="thumb-label">Reportes internos COBA</p>
+        </div>
+        <div class="play-btn">
+          <svg width="16" height="18" viewBox="0 0 16 18" fill="none">
+            <path d="M1 1.5L15 9L1 16.5V1.5Z" fill="#C8A96E"/>
+          </svg>
+        </div>
+      </div>
+      <div class="video-info">
+        <p class="video-tag">Comunicación institucional</p>
+        <p class="video-title">Reportes audiovisuales internos</p>
+        <p class="video-desc">Videos de seguimiento y reporting para la cooperativa COBA. Captura de datos, edición y postproducción en Premiere.</p>
+      </div>
+    </div>
+
+    <!-- Card 2 — placeholder -->
+    <div class="video-card" onclick="openVideo(this)" data-url="https://drive.google.com/file/d/1cE9sEeko4Bc-pWQlUsMpFyQsMbK51AQc/view?usp=drive_link">
+      <div class="video-thumb">
+        <div class="thumb-bg" style="background: #141414;">
+          <p class="thumb-label">Pixeverse IA - UDIA</p>
+        </div>
+        <div class="play-btn">
+          <svg width="16" height="18" viewBox="0 0 16 18" fill="none">
+            <path d="M1 1.5L15 9L1 16.5V1.5Z" fill="#444"/>
+          </svg>
+        </div>
+      </div>
+      <div class="video-info">
+        <p class="video-tag">— Herramientas informativas —</p>
+        <p class="video-title">Pixeverse IA - UDIA</p>
+        <p class="video-desc">Montaje y edición, elección de efectos y Motion Graphics</p>
+      </div>
+    </div>
+
+    <!-- Card 3 — placeholder -->
+    <div class="video-card" onclick="openVideo(this)" data-url="https://drive.google.com/file/d/11m-8YiBGiuVcdBz_3GKIWDTD_yGGlmDI/view?usp=sharing">
+      <div class="video-thumb">
+        <div class="thumb-bg" style="background: #141414;">
+          <p class="thumb-label">El Peligro tras el Silencio de la Nasa</p>
+        </div>
+        <div class="play-btn">
+          <svg width="16" height="18" viewBox="0 0 16 18" fill="none">
+            <path d="M1 1.5L15 9L1 16.5V1.5Z" fill="#444"/>
+          </svg>
+        </div>
+      </div>
+      <div class="video-info">
+        <p class="video-tag">—Entretenimiento —</p>
+        <p class="video-title">El Peligro tras el Silencio de la Nasa - QS-Media</p>
+        <p class="video-desc">Curación de videos de terceros, montaje, edición, efectos y música de video de larga duración.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FILMSTRIP 2 -->
+<div class="filmstrip">
+  <div class="filmstrip-inner" id="filmInner2"></div>
+</div>
+
+<!-- PYTHON PROJECTS -->
+<section class="section" id="proyectos">
+  <p class="section-label reveal">// 02 — Desarrollo Python</p>
+  <h2 class="section-title reveal">Herramientas que<br><em>resuelven problemas reales</em></h2>
+  <p class="section-lead reveal">
+    No construyo demos. Cada proyecto nació de una necesidad concreta dentro de una organización real y hoy está en producción.
+  </p>
+
+  <div class="story-list">
+
+    <!-- Proyecto 1 -->
+    <div class="story-item reveal">
+      <div class="story-left">
+        <p class="story-num">Proyecto 01</p>
+        <h3 class="story-name">Sistema de<br><em>planillas automáticas</em></h3>
+        <p class="story-sub">Automatización de asistencia</p>
+      </div>
+      <div class="story-right">
+        <p class="story-narrative">
+          El área de RRHH de una cooperativa de barrido urbano gestionaba la asistencia de decenas de agentes usando hojas de cálculo dispersas. El proceso era manual, lento y propenso a errores. <strong>Construí un sistema de seis etapas</strong> que descarga automáticamente las planillas desde Google Drive, las valida, las convierte a PDF con la lógica correcta según el tipo de agente, las une y las manda a imprimir en una impresora de red Kyocera.
+        </p>
+        <p class="story-narrative">
+          El sistema detecta el tipo de planilla leyendo una celda de control (L1) y aplica reglas distintas para agentes normales, municipales, coordinadores NOVAR y sin variaciones. La interfaz corre en PyQt6 con workers en QThread para no bloquear la UI.
+        </p>
+        <div class="tech-pills">
+          <span class="pill highlight">Python</span>
+          <span class="pill highlight">PyQt6</span>
+          <span class="pill">Google Drive API</span>
+          <span class="pill">OAuth 2.0</span>
+          <span class="pill">pypdf</span>
+          <span class="pill">python-calamine</span>
+          <span class="pill">QThread</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Proyecto 2 -->
+    <div class="story-item reveal">
+      <div class="story-left">
+        <p class="story-num">Proyecto 02</p>
+        <h3 class="story-name">App de stock<br><em>en red local</em></h3>
+        <p class="story-sub">Gestión de depósito</p>
+      </div>
+      <div class="story-right">
+        <p class="story-narrative">
+          Anteriormente, el Stock de los insumos de la organización se manejaba desde el entorno de Google Sheets. Con el correr del tiempo, el sistema necesitó automatizaciones para seguir evolucionando, por lo que se me ocurrió construir un <strong>Servidor Local</strong> que se encuentre funcionando 24/7 para implementar nuevas funciones como, por ejemplo, <strong>proyecciones de entregas, división de los insumos con un mapa organizativo, exportaciones e impresiones en diferentes formatos al PDF tradicional.</strong>
+        </p>
+        <p class="story-narrative">
+          Incluye registro de ingresos y egresos, un módulo de <em>tandas</em> para agrupar egresos por lote, una pestaña de proyección hipotética de entregas y exportación a CSV. Fue entregada como ZIP listo para ejecutar.
+        </p>
+        <div class="tech-pills">
+          <span class="pill highlight">Python</span>
+          <span class="pill highlight">Flask</span>
+          <span class="pill highlight">SQLite</span>
+          <span class="pill">HTML / CSS / JS</span>
+          <span class="pill">Red local LAN</span>
+          <span class="pill">CSV Export</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Proyecto 3 -->
+    <div class="story-item reveal">
+      <div class="story-left">
+        <p class="story-num">Proyecto 03</p>
+        <h3 class="story-name">Mapa interactivo<br><em>de zonas de barrido</em></h3>
+        <p class="story-sub">Visualización operativa</p>
+      </div>
+      <div class="story-right">
+        <p class="story-narrative">
+          La supervisión de 30 zonas de barrido urbano se hacía con papel y llamadas. <strong>Construí un mapa SVG interactivo</strong> alojado como HTML estático que consume datos en tiempo real desde Google Sheets a través de un middleware propio en Google Apps Script. Cada zona refleja el estado actual del servicio con un click.
+        </p>
+        <p class="story-narrative">
+          El sistema permite exportar el estado de cada punto a PDF usando jsPDF directamente desde el navegador, sin servidor externo. Treinta zonas agrupadas en puntos nombrados, actualizadas sin recargar la página.
+        </p>
+        <div class="tech-pills">
+          <span class="pill highlight">JavaScript</span>
+          <span class="pill highlight">SVG</span>
+          <span class="pill">Google Apps Script</span>
+          <span class="pill">Google Sheets API</span>
+          <span class="pill">jsPDF</span>
+          <span class="pill">HTML estático</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="habilidades">
+  <p class="section-label reveal">// 03 — Habilidades</p>
+  <h2 class="section-title reveal">Dos disciplinas,<br>un <em>mismo criterio</em></h2>
+  <p class="section-lead reveal">
+    La formación técnica en sonido y la práctica diaria con código comparten algo: atención al detalle y respeto por el resultado final.
+  </p>
+
+  <div class="skills-grid reveal">
+    <div class="skill-cell">
+      <span class="skill-icon">🎬</span>
+      <p class="skill-area">Video</p>
+      <p class="skill-name">Edición</p>
+      <p class="skill-tools">Adobe Premiere Pro · Postproducción · Corte narrativo · Motion básico</p>
+    </div>
+    <!--<div class="skill-cell">
+      <span class="skill-icon">🎵</span>
+      <p class="skill-area">Audio</p>
+      <p class="skill-name">Producción musical</p>
+      <p class="skill-tools">Técnico en sonido y música (2023) · Bajo, batería, teclado, guitarra · Mezcla y masterización</p>
+    </div>-->
+    <div class="skill-cell">
+      <span class="skill-icon">🐍</span>
+      <p class="skill-area">Desarrollo</p>
+      <p class="skill-name">Python</p>
+      <p class="skill-tools">Automatización · PyQt6 · Flask · Scripting · APIs · Manejo de archivos</p>
+    </div>
+    <div class="skill-cell">
+      <span class="skill-icon">🗄️</span>
+      <p class="skill-area">Backend</p>
+      <p class="skill-name">Datos y bases</p>
+      <p class="skill-tools">SQLite · Google Sheets · CSV · Pandas (básico)</p>
+    </div>
+    <div class="skill-cell">
+      <span class="skill-icon">🌐</span>
+      <p class="skill-area">Web</p>
+      <p class="skill-name">Frontend básico</p>
+      <p class="skill-tools">HTML · CSS · JavaScript · SVG · Google Apps Script · jsPDF</p>
+    </div>
+    <div class="skill-cell">
+      <span class="skill-icon">⚙️</span>
+      <p class="skill-area">Herramientas</p>
+      <p class="skill-name">Stack de trabajo</p>
+      <p class="skill-tools">VS Code · Git · Windows 10 · Google Drive API · OAuth 2.0 · Redes LAN</p>
+    </div>
+  </div>
+</section>
+
+<!-- REFERECIAS -->
+<section class="section" id="referencias">
+    <p class="section-label">//04- Opiniones</p>
+    <h2 class="section-title">Lo que dicen mis clientes</h2>
+
+    <!-- Contenedor dinámico -->
+    <div class="reviews-grid" id="reviews-container">
+        <!-- Las tarjetas se generan dinámicamente con JS -->
+    </div>
+</section>
+
+
+<!-- CONTACT -->
+<div class="contact-section" id="contacto">
+  <div class="contact-inner">
+    <div class="contact-left reveal">
+      <p class="section-label">// 04 — Contacto</p>
+      <h2 class="contact-title">¿Tenés un<br>proyecto en <em>mente</em>?</h2>
+      <p class="contact-text">Estoy disponible para edición de video, automatización de procesos y desarrollo de herramientas a medida. Trabajo de forma remota.</p>
+      <span class="contact-avail">
+        <span class="avail-dot"></span>
+        Disponible para proyectos
+      </span>
+    </div>
+    <div class="contact-links reveal">
+      <a href="mailto:luchooviedo98@email.com" class="contact-link">
+        <span class="contact-link-label">Email</span>
+        <span>luchooviedo98@email.com</span>
+      </a>
+      <a href="https://www.linkedin.com/in/luciano-oviedo-104237178/" target="_blank" class="contact-link">
+        <span class="contact-link-label">LinkedIn</span>
+        <span>linked.in/luciano-oviedo</span>
+      </a>
+      <a href="https://github.com/luchooviedo98" target="_blank" class="contact-link">
+        <span class="contact-link-label">GitHub</span>
+        <span>github.com/luchooviedo98</span>
+      </a>
+      <a href="https://wa.me/5491139307934" target="_blank" class="contact-link">
+        <span class="contact-link-label">WhatsApp</span>
+        <span>+54 9 — — — —</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Botón Volver Arriba -->
+<button id="btn-scroll-top" aria-label="Volver arriba">
+    ↑
+</button>
+
+<!-- Modal oculto para hacer Zoom a las imágenes -->
+<div id="image-modal">
+    <span class="cerrar-modal">&times;</span>
+    <img id="img-ampliada" alt="Captura ampliada">
+</div>
+
+<footer>
+  <span class="footer-name">Lucho — Portfolio 2026</span>
+  <span class="footer-right">La Plata, Argentina</span>
+</footer>
+
+
+
+</body>
+</html>
